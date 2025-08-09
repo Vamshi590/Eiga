@@ -77,6 +77,20 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="swipe"
+        options={{
+          title: 'Swipe',
+          tabBarIcon: ({ color, focused }) => (
+            <Feather 
+              name="layers" 
+              size={24} 
+              color={color} 
+              style={focused ? styles.activeIcon : {}}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="watched"
         options={{
           title: 'Watched',

@@ -1,6 +1,6 @@
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { Text, View, StyleSheet, ActivityIndicator } from 'react-native';
-import { useRouter, useLocalSearchParams } from 'expo-router';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 export default function WebAuthCallback() {
   const router = useRouter();
@@ -36,7 +36,7 @@ export default function WebAuthCallback() {
     <View style={styles.container}>
       <ActivityIndicator size="large" color="#E50914" />
       <Text style={styles.text}>Redirecting to login page...</Text>
-      <Text style={styles.subText}>You'll be redirected to complete your profile if needed</Text>
+      <Text style={styles.subText}>You&apos;ll be redirected to complete your profile if needed</Text>
     </View>
   );
 }

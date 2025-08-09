@@ -44,7 +44,7 @@ export default function AuthCallback() {
         <>
           <ActivityIndicator size="large" color="#E50914" />
           <Text style={styles.text}>Redirecting to login page...</Text>
-          <Text style={styles.subText}>You'll be redirected to complete your profile if needed</Text>
+          <Text style={styles.subText}>You&apos;ll be redirected to complete your profile if needed</Text>
         </>
       ) : error ? (
         <>
